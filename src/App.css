@@ -1,0 +1,17 @@
+.btnProducto {
+    background-color: #14ce8f ;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: auto;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+    margin: 0.3em 0.5em 1em 0.3em;
+}
+
+.btnProducto:hover{
+    background-color: #fdd805 ;
+}

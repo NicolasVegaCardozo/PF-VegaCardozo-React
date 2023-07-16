@@ -1,0 +1,38 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    margin: 0%;
+}
+
+.titulo {
+    padding-left: 1em;
+    font-style: italic;
+    color: #ffffff
+}
+
+.titulo:hover{
+    color: #ee9ddc ;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+li {
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+li a {
+    color: #ffffff;
+}
+
+li a:hover{
+    color: #ee9ddc;
+}

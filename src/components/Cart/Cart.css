@@ -1,0 +1,10 @@
+h2{
+    padding: 2%;
+}
+
+.contenedorItem {
+    text-align: center;
+    border: 1px solid #e3e1e1;
+    margin: 3rem;
+    padding: 2%;
+}
