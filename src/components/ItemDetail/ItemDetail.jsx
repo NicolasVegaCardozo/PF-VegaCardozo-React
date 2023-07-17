@@ -5,7 +5,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 
-const ItemDetail = ({ id, nombre, precio, img, stock }) => {
+const ItemDetail = ({ id, nombre, precio, img, stock, descripcion }) => {
     const [agregarCantidad, setAgregarCantidad] = useState(0);
 
     const { agregarProducto } = useContext(CartContext);
@@ -20,14 +20,10 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
 
     return (
         <div className='contenedorItem'>
-            <h2>Nombre: {nombre}</h2>
-            <h3>Precio: {precio}</h3>
+            <h2> {nombre}</h2>
+            <h3>Precio: $ {precio}</h3>
             <h3>ID: {id}</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi
-                unde eveniet quas. Delectus possimus provident dolorem blanditiis eius
-                harum obcaecati illo omnis repellat quas, a illum, nisi ipsa adipisci?
-            </p>
+            <p> {descripcion} </p>
             <img src={img} alt={nombre} />
             {
                 agregarCantidad > 0 ? (
